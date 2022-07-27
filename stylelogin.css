@@ -1,0 +1,141 @@
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #976b53 !important;
+}
+.garis1 {
+  border-left: 2px #ccc solid;
+  height: 30px;
+  width: 2px !important;
+}
+#brand {
+  background-color: #fff;
+  margin: 0px;
+}
+ .container {
+   font-family: roboto;
+ }
+ #login {
+  height: auto;
+  font-family: roboto;
+}
+ .login {
+   background: black;
+   padding: 20px;
+   width: 480px;
+   border-radius: 15px;
+ }
+ .avatar {
+   margin: auto;
+   font-size: 30px ;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   border-radius: 50%;
+ }
+ .login h2 {
+   text-align: center;
+   color: black;
+   font-size: 30px;
+   font-family: sans-serif;
+   margin-top: 20px;
+ }
+ .box-login {
+   display: flex;
+   justify-content:space-between;
+   border-bottom: 2px solid white;
+   padding: 20px 0px 1px 0px;
+ }
+ .box-login .checkbox{
+  color: #6d4d3c;
+ }
+
+ .box-login i {
+   font-size: 23px;
+   color: black;
+   padding: 5px 0;
+ }
+ .box-login input {
+   width: 85%;
+   padding: 5px 0;
+   background: none;
+   border: none;
+   outline: none;
+   color: black;
+   font-size: 18px;
+ }
+ .box-login input::placeholder {
+   color: #ccc;
+ }
+
+ .btn-login a:hover {
+  color: #6d4d3c;
+ }
+ .btn-login a {
+  color: #57372b;
+  text-decoration: none;
+ }
+ .btn-login {
+   margin-bottom: 20px;
+   background: #976b53;
+   width: 100%;
+   padding: 10px;
+   color: white;
+   font-size: 18px;
+   letter-spacing: 3px;
+   cursor: pointer;
+   border: 0px;
+   }
+ .btn-login:hover{
+   background: #6d4d3c;
+ }
+ .separator {
+    margin: 20px 0;
+    border-top: 1px solid #CCCCCC;
+    position: relative;
+}
+.socmed-login .socmed-btn {
+    padding: 10px 25px;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+ .bottom {
+   margin-left: 10px;
+   margin-right: 10px;
+   display: flex;
+   justify-content: space-between;
+ }
+ .bottom a {
+   color: white;
+   font-size: 15px;
+   text-decoration: none;
+ }
+ .bottom a:hover {
+ text-decoration: underline;
+ }
+
+ /* Footer */
+ .footer {
+  background-color: #57372b;
+  font-family: roboto;
+}
+.information ul {
+  padding-left: 0px;
+}
+.information li {
+  list-style: none;
+
+}
+.information li a {
+  color: white;
+  text-decoration: none;
+}
+#newsletter{
+  width: 300px;
+}
+
+

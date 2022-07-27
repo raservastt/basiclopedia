@@ -1,0 +1,57 @@
+body {
+    font-family: roboto;
+}
+/* navbar */
+.btn-search{
+    border-radius: 0px;
+}
+#brand {
+    margin-right: 50px;
+    font-family: roboto;
+    font-weight:900;
+}
+.garis1 {
+    width: 2px !important;
+    border-left: 2px #ccc solid;
+    height: 30px;
+}
+
+.form-control[type=search]{
+    border-radius: 0px;
+}
+#user {
+    line-height: 35px;
+}
+
+/* akhir navbar */
+
+.garis1 {
+    border-left: 2px #ccc solid;
+    height: 30px;
+    width: 2px !important;
+  }
+  #brand {
+    margin-right: 50px;
+    font-family: roboto;
+    font-weight:900;
+}
+ /* Footer */
+ .footer {
+    background-color: #57372b;
+    font-family: roboto;
+  }
+  .information ul {
+    padding-left: 0px;
+  }
+  .information li {
+    list-style: none;
+  
+  }
+  .information li a {
+    color: white;
+    text-decoration: none;
+  }
+  #newsletter{
+    width: 300px;
+  }
+  

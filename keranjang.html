@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keranjang</title>
+	<link rel="stylesheet" type="text/css" href="keranjang.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/74cdd4b798.js" crossorigin="anonymous"></script>
+	<link rel="shorcut icon" type="x-icon" href ="assets/img/icon.png">
+	<script>
+		function penjumlahan(){
+			var bil1=100000;
+			var hasil=bil1+bil1;
+
+			document.getElementById("hasil").value=hasil;
+		}
+	</script>
+</head>
+<body>
+	
+	<!-- navbar -->
+	<div class="mt-4 container">
+		<div class="d-flex bd-highlight mb-3">
+			<div class="me-0 p-2 bd-highlight" >
+				<div id="brand" class="navbar-brand"><a href="index.html"  style="color:#976b53 ; text-decoration: none;">BASICLOPEDIA</a></div>
+			</div>
+			<div class="p-2 w-100 bd-highlight">
+			<form class="d-flex flex-row ms-auto" style="width: auto;">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" width="250">
+				<button class="btn" type="submit" style="background-color: #e2251f;">
+					<img src="assets/img/search.png" height="20px" style="color:white;"></i>
+				</button>
+				</form>
+			</div>
+			<div class="ms-3 mt-3 px-1 garis1"></div>
+		  <div class="py-2 ">
+			<a class="navbar-brand d-flex" href="#">
+				<div class="ms-2 namauser">
+					<p class="fs-5 text-dark" id="user">0</p>
+				</div>
+				<div class="ms-2 icon-user">
+					<img src="assets/img/keranjang.png" height="20px" style="color:#e2251f;"></i>
+				</div>
+			  </a>
+		  </div>
+		  <div class="mt-3 px-1 garis1"></div>
+		  <div class="me-0 py-2 bd-highlight">
+			<a class="navbar-brand d-flex" href="indexlogin.html">
+				<div class="namauser">
+					<p class="ms-2 fs-5 text-dark" id="user">Guest</p>
+				</div>
+				<div class="ms-2 icon-user">
+					<img src="assets/img/profile.png" height="20px"  style="color:#e2251f;"></i>
+				</div>
+			  </a>
+		  </div>
+		</div>
+	</div>
+	<!-- akhir navbar -->
+	<div id="brand">
+		<div class="row pb-3 pt-2" style="background-color: #976b53;">
+		  <a href="" class="navbar-brand text-center my-auto pt-3 fw-bold fs-2" style="color:white;">
+			Keranjang
+		  </a>
+		  </div>
+		</div>
+	  </div>
+	<div class="databelanja">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-8 ps-5">
+					<div class="Judul">
+						<h2 class="mb-5 mt-3">Shopping Cart</h2>
+						<div class="row text-start"id="sub-judul">
+	
+							<div class="col-5">
+								<h5>Product</h5>
+							</div>
+							<div class="col-1">
+								<h5>Size</h5>
+							</div>
+							<div class="col-3 ps-4">
+								<h5>Quantity</h5>	
+							</div>
+							<div class="col-3">
+								<h5>Total Price</h5>
+							</div>
+						</div>
+						<div class="row">
+							<hr>
+						</div>
+						<div class="row pt-2">
+							<div class="col-5"id="product">
+								<div class="d-flex flex-row">
+									<img src="p.jpeg" width="100" height="120">
+									<div class="namaproduk ps-2 my-auto">
+										<h5>baju kaos</h5>
+										<p>hitam</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-2 my-auto p-0" id="size">
+								<select class="form-select">
+									<option selected>Size</option>
+									<option value="1">S</option>
+									<option value="2">M</option>
+									<option value="3">L</option>
+								  </select>
+							</div>
+							<div class="col-2 ps-4 my-auto"id="quantity">
+								<div class="quantity buttons_added">
+								<input type="number" id="bil1"><br>
+								</div>
+							</div>
+							<div class="col-3 my-auto"id="total-price">
+								<h5>Rp100.000 
+								</h5>
+							</div>
+						</div>
+						<div class="row pt-3 justify-content-end">
+							<hr>
+							<div class="col-5">
+								<div class="d-flex flex-row">
+									<div class="total pe-4">
+										<h5>Total</h5>
+									</div>
+									<div class="jumlah ps-1">	
+										<h5>Hasil : <input type="number" id="hasil"><br>
+										<button onclick="penjumlahan()">order</button></h5>	
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card mx-auto">
+					  <div class="card-body">
+						<h2 class="card-title">Payment Info</h2>
+						<hr>
+						<h5>Payment Method</h5>
+						<br>
+						<div class="method text-start">
+							<ul class="nav nav-pills mb-3  justify-content-center" id="pills-tab" role="tablist">
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Credit Card</button>
+							  </li>
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">COD</button>
+							  </li>
+							</ul>
+							<hr>
+							<div class="tab-content" id="pills-tabContent">
+							  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
+								  <form>
+								  <div class="mb-3">
+									<label for="numbercard" class="form-label">Name On Card</label>
+									<input type="text" name="creditcard" class="form-control" id="numbercard" required>
+								  </div>
+								  <div class="mb-3">
+									<label for="exampleInputnumber" class="form-label">Card Number</label>
+									<input type="password" class="form-control" id="exampleInputunmber" required>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							  </div>
+	
+							  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								  <form>
+								  <div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Full Name</label>
+									<input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="name" required>
+								  </div>
+								  <div class="mb-3">
+									<label for="exampleInputPassword1" class="form-label">Addres</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" required>
+								  </div>
+								  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							  </div>
+							</div>
+					   </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+    <div class="footer" style="height: auto;">
+        <div class="row">
+            <div class="col-lg-5 col-sm-12">
+                <div class="text-lg-start text-sm-center text-light mt-lg-5 mt-sm-5 ms-5">
+                    <h4 class="fs-5">KEEP IN TOUCH</h4>
+                    <p class="fs-6 fw-light">Satu-satunya cara untuk melakukan pekerjaan hebat <br> adalah cintai apa yang anda lakukan</p>
+                </div>
+            </div>
+            <div class="garis1 my-auto" style="width: 2px;"></div>
+            <div class="col-lg-2 col-sm-12">
+                <div class="information text-lg-start text-sm-center text-light mt-lg-5 mt-sm-1">
+                    <h4 class="fs-5">Information</h4>
+                    <ul>
+                        <li><a href="">Our Store</a></li>
+                        <li><a href="">Sale</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Help Centre</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="garis1 my-auto" style="width: 2px;"></div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="newsletter text-lg-end text-sm-center text-light mt-lg-5 mt-sm-1">
+                    <h4 class="fs-5">Newsletter</h4>
+                    <p>Dapatkan notifikasi dari brand terkenalmu!</p>
+                    <div class="input-group ms-auto mb-lg-0 mb-sm-5 " id="newsletter">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="email">
+                        <div class="input-group-text" id="basic-addon1"><img src="assets/img/email.png" height="20px"  style="color:#e2251f;">
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="cr bg-dark text-light">
+        &copy; Copyright 2021, Basiclopedia Company
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: roboto;
+}
+.gariss1 {
+    border-left: 2px #ccc solid;
+    height: 30px;
+    width: 2px;
+}
+.gariss2 {
+    border: 1px #ccc solid;
+}
+/* navbar */
+.btn-search{
+    border-radius: 0px;
+}
+#brand {
+    margin-right: 50px;
+    font-family: roboto;
+    font-weight:900;
+}
+.garis1 {
+    width: 2px !important;
+    border-left: 2px #ccc solid;
+    height: 30px;
+}
+
+.form-control[type=search]{
+    border-radius: 0px;
+}
+#user {
+    line-height: 35px;
+}
+/* akhir navbar */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #57372b !important;
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: #57372b !important;
+    border-color: #57372b !important;
+}
+.btn-primary:hover {
+    background-color: black !important;
+}
+.nav-link {
+    color: black !important;
+}
+.databelanja {
+	background-color: #f9f5f2;
+}
+.quantity [type=number]{
+	width: 30px;
+}
+
+/* footer */
+.footer {
+    background-color: #57372b;
+    font-family: roboto;
+}
+.information ul {
+    padding-left: 0px;
+}
+.information li {
+    list-style: none;
+
+}
+.information li a {
+    color: white;
+    text-decoration: none;
+}
+#newsletter{
+    width: 300px;
+}
+
+
+
